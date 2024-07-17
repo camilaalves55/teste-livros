@@ -1,13 +1,31 @@
+// import React from 'react';
+
+// const Livros = ({ livros }) => {
+//   return (
+//     <ul>
+//       {livros.map((livro, index) => (
+//         <li key={index}>{livro}</li>
+//       ))}
+//     </ul>
+//   );
+// };
+
+// export default Livros;
+
+
 import React from 'react';
 
-const ListaTarefas = ({ tarefas }) => {
+const Atividade = ({ tarefas }) => {
   return (
-    <ul>
-      {tarefas.map((tarefa, index) => (
-        <li key={index}>{tarefa}</li>
-      ))}
-    </ul>
+    <div>
+      <h3>Tarefas:</h3>
+      <ul>
+        {tarefas.map((tarefa, index) => (
+          <li key={index}>{tarefa}</li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
-export default ListaTarefas;
+export default Atividade;
